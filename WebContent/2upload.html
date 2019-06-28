@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+function checkf(f2){
+if(f2.name.value=="")
+		{
+		  alert("Plz enter NAME");
+		 f2.name.focus();
+		 f2.name.value="";
+		 return false;
+			}
+		var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.name.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.name.value="";
+				  f2.name.focus();
+				  return false;
+			
+				}
+if(f2.hall.value=="")
+		{
+		  alert("Plz enter the Hallticket number");
+		 f2.hall.focus();
+		 f2.hall.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.hall.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.hall.value="";
+				  f2.hall.focus();
+				  return false;
+			
+				}
+ 
+if(f2.sub1.value==""){
+	  alert("Enter the sub1 marks");
+	  f2.sub1.focus();
+	  f2.sub1.value="";
+	  return false;
+	}
+var exp=/^[0-9]+$/ ;
+		if(!f2.sub1.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.sub1.value="";
+				  f2.sub1.focus();
+				  return false;
+			
+		}
+if(f2.sub2.value==""){
+			  alert("Enter the sub2 marks");
+			  f2.sub2.focus();
+			  f2.sub2.value="";
+			  return false;
+			}
+	var exp=/^[0-9]+$/ ;
+				if(!f2.sub2.value.match(exp))
+						{
+					
+					      alert(" enter numbers only");
+						  f2.sub2.value="";
+						  f2.sub2.focus();
+						  return false;
+					
+				}
+
+
+if(f2.sub3.value==""){
+	  alert("Enter the sub3 marks");
+	  f2.sub3.focus();
+	  f2.sub3.value="";
+	  return false;
+ 			}
+    var exp=/^[0-9]+$/ ;
+		if(!f2.sub3.value.match(exp))
+			{
+							
+	                   alert(" enter numbers only");
+					   f2.sub3.value="";
+					   f2.sub3.focus();
+					   return false;
+							
+						}
+
+
+if(f2.sub4.value==""){
+		  alert("Enter sub4 marks");
+		  f2.sub4.focus();
+		  f2.sub4.value="";
+		  return false;
+							}
+		var exp=/^[0-9]+$/ ;
+    	if(!f2.sub4.value.match(exp))
+			{
+				
+	    	      alert(" enter numbers only");
+				  f2.sub4.value="";
+				  f2.sub4.focus();
+				  return false;
+									
+								}
+if(f2.sub5.value==""){
+  		  alert("Enter sub5 marks");
+  		  f2.sub5.focus();
+  		  f2.sub5.value="";
+  		  return false;
+  							}
+  		var exp=/^[0-9]+$/ ;
+      	if(!f2.sub5.value.match(exp))
+  			{
+  				
+  	    	      alert(" enter numbers only");
+  				  f2.sub5.value="";
+  				  f2.sub5.focus();
+  				  return false;
+  									
+  								}
+if(f2.lab1.value==""){
+  		  alert("Enter lab1 marks");
+  		  f2.lab1.focus();
+  		  f2.lab1.value="";
+  		  return false;
+  							}
+  		var exp=/^[0-9]+$/ ;
+      	if(!f2.lab1.value.match(exp))
+  			{
+  				
+  	    	      alert(" enter numbers only");
+  				  f2.lab1.value="";
+  				  f2.lab1.focus();
+  				  return false;
+  									
+  								}
+  if(f2.lab2.value==""){
+  		  alert("Enter lab2 marks");
+  		  f2.lab2.focus();
+  		  f2.lab2.value="";
+  		  return false;
+  							}
+  		var exp=/^[0-9]+$/ ;
+      	if(!f2.lab2.value.match(exp))
+  			{
+  				
+  	    	      alert(" enter numbers only");
+  				  f2.lab2.value="";
+  				  f2.lab2.focus();
+  				  return false;
+  									
+  								}
+if(f2.lab3.value==""){
+  		  alert("Enter lab3 marks");
+  		  f2.lab3.focus();
+  		  f2.lab3.value="";
+  		  return false;
+  							}
+  		var exp=/^[0-9]+$/ ;
+      	if(!f2.lab3.value.match(exp))
+  			{
+  				
+  	    	      alert(" enter numbers only");
+  				  f2.lab3.value="";
+  				  f2.lab3.focus();
+  				  return false;
+  									
+  								}
+
+
+if(f2.total.value=="")
+		{
+		  alert("Plz enter the total ");
+		 f2.total.focus();
+		 f2.total.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.total.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.total.value="";
+				  f2.total.focus();
+				  return false;
+				}
+if(f2.percentage.value=="")
+		{
+		  alert("Plz enter numbers only");
+		 f2.percentage.focus();
+		 f2.percentage.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.percentage.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.percentage.value="";
+				  f2.percentage.focus();
+				  return false;
+			
+				}
+
+else
+	{
+	return true;
+	}
+} 
+
+function add()
+{
+var a,b,c,d,e,f,g,h,i,j;
+a=Number(document.getElementById("sub1").value);
+
+b=Number(document.getElementById("sub2").value);
+c=Number(document.getElementById("sub3").value);
+d=Number(document.getElementById("sub4").value);
+e=Number(document.getElementById("sub5").value);
+f=Number(document.getElementById("lab1").value);
+g=Number(document.getElementById("lab2").value);
+h=Number(document.getElementById("lab3").value);
+i=(a+b+c+d+e+f+g+h);j=(i/8);
+
+
+document.getElementById("total").value=i;
+document.getElementById("per").value=j;
+var a1="PASS";
+var a2="FAIL";
+if (a>=40 && b>=40 && c>=40 && d>=40 && e>=40 && f>=40 && g>=40 && h>=40)
+{
+document.getElementById("rtype").value=a1;
+}
+else
+{
+document.getElementById("rtype").value=a2;	
+}
+}
+
+</script>
+<meta charset="ISO-8859-1">
+<title>second semeter upload</title>
+</head>
+<body background="img/9.jpg">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+<div id="con">
+
+<h2><center><font color="blue">II SEM MARKS UPLOADING</font></center></h2><BR><br>
+<center><form action="2store.jsp" name="f2" onSubmit="return checkf(this)" method="post">
+<table>
+<tr><td><b>NAME:&nbsp;</b><td><input type="text" pattern="[a-z A-z]+{50}" name="name"size="25">
+<tr><td><b>Hallticket NO:&nbsp;</b><td><input type="text" minlength="10" maxlength="10" pattern="\d{10}" name="hall"size="25">
+<tr><td><b>COOR:&nbsp;</b><td><input type="number" min="0"max="100" name="sub1"size="25" id="sub1">
+<tr><td><b>DS:&nbsp;</b><td><input type="number" min="0"max="100" name="sub2" size="25"id="sub2">
+<tr><td><b>OS:&nbsp;</b><td><input type="number" min="0"max="100"name="sub3"size="25"id="sub3">
+<tr><td><b>FS:&nbsp;</b><td><input type="number" min="0"max="100" name="sub4"size="25"id="sub4">
+<tr><td><b>AFM:&nbsp;</b><td><input type="number" min="0"max="100" name="sub5"size="25"id="sub5">
+<tr><td><b>S/W LAB2:&nbsp;</b><td><input type="number" min="0"max="100" name="lab1"size="25"id="lab1">
+<tr><td><b>FS LAB:&nbsp;</b><td><input type="number" min="0"max="100" name="lab2"size="25"id="lab2">
+<tr><td><b>DS LAB:&nbsp;</b><td><input type="number" min="0"max="100" name="lab3"size="25"id="lab3">
+<tr><td><b>TOTAL&nbsp;</b><td><input type="number"min="0" max="800" name="total"size="25"id="total">
+<tr><td><b>PERCENTAGE:&nbsp;</b><td><input type="float" min="0" max="100.00" name="per"size="25"id="per">
+<tr><td><b>RESULT:&nbsp;</b><td><input type="text" name="rtype" id="rtype" >
+</td></tr>
+</tr><tr><td><center><input type="submit" value="UPLOAD" onclick="add()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="CLEAR"></center>
+</table>
+</form></center>
+
+</body>
+</html>

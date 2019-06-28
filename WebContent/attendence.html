@@ -1,0 +1,133 @@
+<html>
+<head><SCRIPT LANGUAGE="JavaScript">
+function checkf(f2){
+if(f2.name.value=="")
+		{
+		  alert("Plz enter characters only");
+		 f2.name.focus();
+		 f2.name.value="";
+		 return false;
+			}
+		var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.department.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.department.value="";
+				  f2.department.focus();
+				  return false;
+			
+				}
+if(f2.reg.value=="")
+		{
+		  alert("Plz enter the Reg number");
+		 f2.reg.focus();
+		 f2.reg.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.reg.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.reg.value="";
+				  f2.reg.focus();
+				  return false;
+			
+				}
+ 
+if(f2.sem.value==""){
+	  alert("Enter the characters only");
+	  f2.sem.focus();
+	  f2.sem.value="";
+	  return false;
+	}
+var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.sem.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.sem.value="";
+				  f2.sem.focus();
+				  return false;
+			
+		}
+	
+
+if(f2.month.value==""){
+	  alert("Enter the month number");
+	  f2.month.focus();
+	  f2.month.value="";
+	  return false;
+	}
+var exp=/^[0-9]+$/ ;
+		if(!f2.month.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.month.value="";
+				  f2.month.focus();
+				  return false;
+			
+		}
+	
+if(f2.year.value=="")
+		{
+		  alert("Plz enter the year ");
+		 f2.year.focus();
+		 f2.year.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.year.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.year.value="";
+				  f2.year.focus();
+				  return false;
+			
+				
+				}
+else
+	{
+	return true;
+	}
+} 
+
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body background="img/9.jpg">
+<div id=" ">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+</div>
+<div id=" "><center>
+<a href="welcome.html"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="admin.html"><b>ADMIN</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="student.html"><b>STUDENT</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="t1.html"><b>PHOTOGALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reports.html">REPORTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fee.html"><b>FEE STUCTURE</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html"><b>CONTACT US</b></a>
+</center>
+</div><div id="con"><BR><center><h2>ATTENDENCE UPLOAD</h2></center>
+<center><form action="atnd.jsp"name="f2" onSubmit="return checkf(this)" method="post">
+<table>
+<tr><td><b>RegisterNo:</b><td><input type="text" minlength="10" maxlength="10" pattern="\d{10}" name="regno" size="25">
+<tr><td><b>Name</b><td><input type="text" name="name" size="25">
+<tr><td><b>Semester</b><td><input type="text" name="sem" size="25">
+<tr><td><b>Month</b><td><input type="text" name="month" size="25">
+<tr><td><b>Year</b><td><input type="text" name="year" size="25">
+<tr><td><b>Total Working Days:&nbsp;&nbsp;&nbsp;</b><td><input type="text" name="days" size="3">
+<tr><td><b>No Of Days Attended:&nbsp;&nbsp;&nbsp;</b><td><input type="text" name="atten" size="3"><BR>
+<tr><td><center><input type="submit" value="insert" onClik="checkf(this)">&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="clear"></center>
+</div>
+</table>
+</form></center>
+</body>
+</html>
+

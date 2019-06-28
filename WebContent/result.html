@@ -1,0 +1,134 @@
+<html>
+<head><SCRIPT LANGUAGE="JavaScript">
+function checkf(f2){
+if(f2.name.value=="")
+		{
+		  alert("Plz enter  name");
+		 f2.name.focus();
+		 f2.name.value="";
+		 return false;
+			}
+		var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.name.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.name.value="";
+				  f2.name.focus();
+				  return false;
+			
+				}
+if(f2.hall.value=="")
+		{
+		  alert("Plz enter the Hallticket number");
+		 f2.hall.focus();
+		 f2.hall.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.hall.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.hall.value="";
+				  f2.hall.focus();
+				  return false;
+			
+				}
+ 
+if(f2.batch.value==""){
+	  alert("Enter the batch only");
+	  f2.batch.focus();
+	  f2.batch.value="";
+	  return false;
+	}
+var exp=/^[0-9]+$/ ;
+		if(!f2.batch.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.batch.value="";
+				  f2.batch.focus();
+				  return false;
+			
+		}
+
+if(f2.sem.value=="")
+		{
+		  alert("Plz enter the semester ");
+		 f2.sem.focus();
+		 f2.sem.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.sem.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.sem.value="";
+				  f2.sem.focus();
+				  return false;
+				}
+if(f2.result.value=="")
+		{
+		  alert("Plz enter characters only");
+		 f2.result.focus();
+		 f2.result.value="";
+		 return false;
+			}
+		var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.result.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.result.value="";
+				  f2.result.focus();
+				  return false;
+			
+				}
+
+else
+	{
+	return true;
+	}
+} 
+
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body background="img/9.jpg">
+<div id=" ">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+</div>
+<div id=" "><center>
+<a href="welcome.html"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="admin.html"><b>ADMIN</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="student.html"><b>STUDENT</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="t1.html"><b>PHOTOGALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reports.html"><b>REPORTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fee.html"><b>FEE STUCTURE</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html"><b>CONTACT US</b></a>
+</center>
+</div><div id="con"><h2><center>RESULT UPLOAD</center></h2><BR>
+<center><form action="res.jsp" name="f2" onSubmit="return checkf(this)" method="post">
+<table>
+<tr><td><b>Name:&nbsp;</b><td><input type="text" name="name"size="25">
+<tr><td><b>Hallticket NO:&nbsp;</b><td><input type="text" name="hall"size="25">
+<tr><td><b>Department:&nbsp;</b><td><input type="text" name="dept" size="25">
+<tr><td><b>I Sem Marks:&nbsp;</b><td><input type="text" name="sem1"size="25">
+<tr><td><b>II Sem Marks:&nbsp;</b><td><input type="text" name="sem2"size="25">
+<tr><td><b>III Sem Marks:&nbsp;</b><td><input type="text" name="sem3"size="25">
+<tr><td><b>IV Sem Marks:&nbsp;</b><td><input type="text" name="sem4"size="25">
+<tr><td><b>V Sem Marks:&nbsp;</b><td><input type="text" name="sem5"size="25">
+<tr><td><b>VI Sem Marks:&nbsp;</b><td><input type="text" name="sem6"size="25">
+<tr><td><b>Result:&nbsp;</b><td><input type="text" name="result"size="25">
+<tr><td><b>GPA:&nbsp;</b><td><input type="text" name="gpa"size="25">
+<tr><td><center><input type="submit" value="insert">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="clear"></center>
+</table>
+</form></center>
+</body>
+</html>
+

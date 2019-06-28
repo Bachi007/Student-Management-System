@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<TITLE>svu cm&cs college admin</TITLE>
+<script  Language="JavaSript">
+function checkf(f2){
+ 
+	if(f2.name.value=="")
+		{
+		  alert("Plz enter the name");
+		 f2.name.focus();
+		 f2.name.value=" ";
+		 return false;
+			}
+			var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.name.value.match(exp))
+				{
+			
+			      alert(" enter charecters only");
+			  f2.name.value="";
+				 f2.name.focus();
+				  return false;
+				}
+
+		if(f2.pwd.value=="")
+		{
+		  alert("Plz enter the name");
+		 f2.pwd.focus();
+		 f2.pwd.value=" ";
+		 return false;
+			}
+			var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.pwd.value.match(exp))
+				{
+			
+			      alert(" enter charecters only");
+			  f2.pwd.value="";
+				 f2.pwd.focus();
+				  return false;
+			
+				}
+				else
+	{
+	return true;
+	}
+}
+</script></head>
+<body background="img/9.jpg">
+<div id=" ">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+</div>
+<div id=" "><center>
+<a href="welcome.html"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="admin.html"><b>ADMIN</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="student.html"><b>STUDENT</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="t1.html"><b>PHOTOGALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reports.html"><b>REPORTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fee.html"><b>FEE STUCTURE</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html"><b>CONTACT US</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</center>
+</div>
+<center>
+<BR><BR>
+ <font size="+2" color="#FF5C0F"><h2><b><center>ADMIN LOGIN</center></b></h2></font>
+<br>
+<center>
+<table border=10 color="black" ><tr><td>
+<form action="admincheck.jsp" name="f2" onSubmit="return checkf(this)" method="post">
+ <tr>
+ <td><font color="#0000ff"><b>UserName:</b></font></td>
+ <td><font color="#0000ff"><input type="text" name="name" ></font></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr> 
+<td><b><font color="#0000ff"> Password :</font></b></td>
+<td><input type="password" name="pwd"></td>
+</tr>
+<tr><td>&nbsp;</td></tr></table>
+<BR>
+<center><input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="Reset">
+</center>
+</center>
+</BODY>
+</HTML>

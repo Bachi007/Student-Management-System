@@ -1,0 +1,141 @@
+
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+function checkf(f2)
+{
+	if(f2.admno.value=="")
+		{
+	  alert("Enter the admno");
+	  f2.admno.value="";
+	  f2.admno.focus();
+	  
+	  return false;
+	}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.admno.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.admno.value="";
+				  f2.admno.focus();
+				  return false;
+			
+				}                                                     
+
+		if(f2.name.value=="")
+		{
+		  alert("Plz enter NAME");
+		  f2.name.value="";
+		  f2.name.focus();
+		 
+		 return false;
+			}
+		var exp=/^[a-zA-Z]+$/ ;
+		if(!f2.name.value.match(exp))
+				{
+			
+			      alert(" enter characters only");
+				  f2.name.value="";
+				  f2.name.focus();
+				  return false;
+			
+				}
+
+
+if(f2.email.value==""){
+	  alert("Enter the  email address");
+	  f2.email.focus();
+	  f2.email.value="";
+	  return false;
+	}
+	
+if(f2.phone.value==" ")
+	{
+	alert("plz enter ur phone number");
+	f2.phone.focus();
+	f2.phone.value="";
+	return false;
+	}
+	
+	if(f2.phone.value.length==10)
+	{
+		alert("plz enter phone no atleast 10 digits");
+		f2.phone.value="";
+		f2.phone.focus();
+		return false;
+	
+	}
+	if(f2.phone.value.length>12)
+	{
+		alert(plz enter phone no atleast 12 digit);
+		f2.phone.focus();
+		f2.phone.value="";
+	return false;
+	}
+	var exp=/^[0-9]+$/ ;
+		if(!f2.phone.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.phone.value="";
+				  f2.phone.focus();
+				  return false;
+			
+				}
+		if(f2.adr.value==""){
+			  alert("Enter the   address");
+			  f2.adr.focus();
+			  f2.adr.value="";
+			  return false;
+			}
+	}
+else
+	{
+	return true;
+	}
+}
+
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body background="img/9.jpg">
+<div id=" ">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+</div>
+<div id=" "><center>
+<a href="welcome.html"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="admin.html"><b>ADMIN</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="student.html"><b>STUDENT</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="t1.html"><b>PHOTOGALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reports.html"><b>REPORTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fee.html"><b>FEE STUCTURE</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html"><b>CONTACT US</b></a>
+</center>
+</div><h2><center><font color='red'>STUDENT REGISTRATION FORM</center></h2></font>
+<div id="con"><br>
+<center><form action="stud1.jsp"  name="f2" onSubmit="return checkf(this)" method="post">
+<table><tr><td>1
+<b>Admission No:&nbsp;</b><td><input type="text" minlength="10" maxlength="10" pattern="\d{10}" name="admno"style="text-transform:uppercase" tittle="plese enter 10 digits"size="25"><tr><td>
+<b>Student Name:&nbsp;</b><td><input type="text" name="name" size="25"><tr><td>
+<b>Course:&nbsp;</b><td><select name="course"><option></option><option value="MCA">MCA</option>
+<option value="MBA">MBA</option><option value="M.Com">M.Com</option>
+<option value="M.Sc">M.Sc</option></select>
+<tr><td>
+<b>Batch:&nbsp</b><td><select name="batch"><option ></option><option>2009-2012</option><option>2010-2013</option><option>2011-2014</option><option>2012-2015</option><option>2013-2016</option><option>2014-2017</option><option>2015-2018</option><option>2016-2019</option>
+<option>2017-2020</option><option>2018-2021</option><option">2019-2022</option><option>2020-2023</option>
+</select>
+<tr><td>
+<b>Email_Id:&nbsp;</b><td><input type="email" name="email" size="25"><tr><td>
+<b>Contact No:&nbsp;</b><td><input type="text"minlength="10" maxlength="10" pattern="\d{10}" name="phone" size="25"><tr><td>
+<b>Address:&nbsp;</b><td><textarea rows="3" cols="20"name="adr" ></textarea><tr><td>
+<tr><td>
+<input type="submit" value="submit" onclick="add()">
+<input type="reset" value="cancel">
+</table>
+</form></center>
+</body>
+</html>
+

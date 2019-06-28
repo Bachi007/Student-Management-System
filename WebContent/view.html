@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+    .select-boxes{width: 280px;text-align: center;}
+    select {
+        background-color: #F5F5F5;
+        border: 1px double #FB4314;
+        color: #55BB91;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 14px;
+        height: 39px;
+        padding: 7px 8px;
+        width: 250px;
+        outline: none;
+        margin: 10px 0 10px 0;
+    }
+    select option{
+        font-family: Georgia;
+        font-size: 14px;
+    }
+    </style>
+ <style type="text/css">  
+         fieldset {  
+            border: #00cc00 2px solid;  
+            padding: 10px;  
+            color: green;  
+      </style>  
+
+</head>
+<body>
+    <script>
+ // year
+var country_arr = new Array("1", "2", "3" );
+// year
+var country_arr1 = new Array("First semister","Second semister","Third semister","Fourth semister","Fifth semister");
+
+// semisters
+var s_a = new Array();
+s_a[0] = "";
+s_a[1] = "1|2";
+s_a[2] = "3|4";
+s_a[3] = "5";
+
+function populateStates(countryElementId, stateElementId) {
+
+    var selectedCountryIndex = document.getElementById(countryElementId).selectedIndex;
+
+    var stateElement = document.getElementById(stateElementId);
+
+    stateElement.length = 0; // Fixed by Julian Woods
+    stateElement.options[0] = new Option('Select semister', '');
+    stateElement.selectedIndex = 0;
+
+    var state_arr = s_a[selectedCountryIndex].split("|");
+
+    for (var i = 0; i < state_arr.length; i++) {
+        stateElement.options[stateElement.length] = new Option(state_arr[i], state_arr[i]);
+    }
+}
+function populateCountries(countryElementId, stateElementId) {
+    // given the id of the <select> tag as function argument, it inserts <option> tags
+    var countryElement = document.getElementById(countryElementId);
+    countryElement.length = 0;
+    countryElement.options[0] = new Option('Select year', '-1');
+    countryElement.selectedIndex = 0;
+    for (var i = 0; i < country_arr.length; i++) {
+        countryElement.options[countryElement.length] = new Option(country_arr[i], country_arr[i]);
+    }
+	   // Assigned all countries. Now assign event listener for the states.
+
+    if (stateElementId) {
+        countryElement.onchange = function () {
+            populateStates(countryElementId, stateElementId);
+        };
+    }
+}
+</script>
+<form name="f1" action="view.jsp" method="post">
+<fieldset>
+<div align="center">
+        <br/>select Batch:
+		<select id="batch" name="batch" aria-required="true" class="required">
+    <option value="">Select batch</option>
+    <option value="2014-17">2014-17</option>
+    <option value="2015-18">2015-18</option>
+	<option value="2016-19">2016-19</option>
+    </select>
+
+  <br/>Select Year:
+        <select id="country" name="country"></select>
+        <br />select semister:
+        <select name="state" id="state"></select>
+        
+        
+<br/>
+<input type="submit" name="submit" value="submit" >
+</fieldset>
+</form >
+		           <script language="javascript">
+           populateCountries("country", "state");
+</script>
+</body>
+</html>

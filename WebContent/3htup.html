@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+function checkf(f2){
+
+if(f2.hall.value=="")
+		{
+		  alert("Plz enter the Hallticket number");
+		 f2.hall.focus();
+		 f2.hall.value="";
+		 return false;
+			}
+		var exp=/^[0-9]+$/ ;
+		if(!f2.hall.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.hall.value="";
+				  f2.hall.focus();
+				  return false;
+			
+				}
+ 
+
+else
+	{
+	return true;
+	}
+} 
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>THIRD SEM MARKS UPDATE</title>
+</head>
+<body background="img/9.jpg">
+<center><img src="img/ss1.jpg" width="750px"></center><br>
+<h2><center>
+<div id="con">
+<font color='blue'>THIRD SEM MARKS UPDATE</font></center></h2><br>
+<center><form action="3htup1.jsp"   name="f2" onSubmit="return checkf(this)" method="post">
+<table>
+
+<tr><td><b>Hallticket NO:&nbsp;</b><td><input type="text" minlength="10"  maxlength="10"name="hall"size="25">
+
+</select></td></tr>
+</tr><tr><td><center><input type="submit" value="UPDATE" onclick="checkf(f2)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="CLEAR"></center>
+</table>
+</form></center>
+
+</body>
+</html>

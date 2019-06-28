@@ -1,0 +1,57 @@
+
+<html>
+<head><SCRIPT LANGUAGE="JavaScript">
+function checkf(f2){
+ 
+	if(f2.regno.value=="")
+		{
+		  alert("Plz enter the admn number");
+		 f2.regno.focus();
+		 f2.reg.value="";
+		 return false;
+			}
+var exp=/^[0-9]+$/ ;
+		if(!f2.regno.value.match(exp))
+				{
+			
+			      alert(" enter numbers only");
+				  f2.regno.value="";
+				  f2.regno.focus();
+				  return false;
+			
+				}
+
+else
+	{
+	return true;
+	}
+}
+</SCRIPT>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body background="img/9.jpg">
+<div id=" ">
+<h1>
+<center><img src="img/ss1.jpg" width="750px"></center></h1><br>
+</div>
+<div id=" "><center>
+<a href="welcome.html"><b>HOME</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="admin.html"><b>ADMIN</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="student.html"><b>STUDENT</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="t1.html"><b>PHOTOGALLERY</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reports.html"><b>REPORTS</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Fee.html"><b>FEE STUCTURE</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="contact.html"><b>CONTACT US</b></a>
+</center>
+</div>
+<div id="con">
+<center><form action="attend.jsp" name="f2" onSubmit="return checkf(this)" method="post">
+<br><br><br><br><table>
+<tr><td><b>Register No:</b><td><input type="text" name="regno" size="25">
+<tr><td><input type="submit" value="submit">
+<input type="reset" value="cancel">
+</table>
+</form></center>
+</body>
+</html>
+

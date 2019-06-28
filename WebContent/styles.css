@@ -1,0 +1,77 @@
+#tit
+{
+width:600%;
+max-width:400px;
+font-family: Lucida Sans Unicode, Lucida Grande’, sans-serif;
+color: #C90;
+background-color:blue;
+padding-left:35px;
+padding-top:15px;
+height:140px;
+box-shadow:2px 2px 5px gray;
+text-shadow:4px 4px 4px black, -4px -4px 4px #C6090E;
+-moz-border-radius: 19px;
+-ms-border-radius:19px;
+
+}
+button
+{
+left:370px;
+font_family:"comic sans MS";
+position:absolute;
+top:180px;
+height:30px;
+width:110px;
+font_size:15px;
+background_color:black;
+color:black;
+background:yellow;
+}
+#ban
+{
+position:absolute;
+top:10px;
+left:500px;
+width:100px;
+height:150px;
+-moz-border-radius: 20px;
+}
+.bt
+{
+position:absolute;
+left:40px;
+}
+.bt1
+{
+position:absolute;
+left:240px;
+}
+.bt2
+{
+position:absolute;
+left:440px;
+}
+.bt3
+{
+position:absolute;
+left:640px;
+}
+#con
+{
+position:absolute;
+top:230px;
+left:20px;
+width:750px;
+height:500px;
+
+color:blue;
+font_family:Gabrioalu
+font_size:20px;
+font_weight:bold;
+}
+#m
+{
+display:block;
+width:300%;
+background-color:white;
+}
